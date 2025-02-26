@@ -1,0 +1,14 @@
+<h1> Oh the places you'll go! / have gone </h1>
+
+<ul>
+    <% for @place in @places %>
+    <li>
+      <a href="/places/<%=place["id"]%>">
+        <%= @place["name"] %>
+      </a>
+      
+    </li>
+  <% end %>
+</ul>
+
+<a href="/places/new">New Place</a>
